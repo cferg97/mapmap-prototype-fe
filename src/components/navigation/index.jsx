@@ -29,13 +29,13 @@ const NavBar = () => {
   return (
     <>
       <nav className="">
-        <div className="max-w-screen flex flex-wrap items-center justify-between mx-auto p-4">
+        <div className="max-w-screen-4xl p-3 flex flex-wrap items-center justify-between mx-auto p-4 bg-[rgba(255,255,255,0.02)]">
           <div className="w-fit flex">
             <Link href="/">
               <Image src={Logo} width={200} height={100} alt="Map Map Logo" />
             </Link>
           </div>
-          <div className="flex mx-auto w-[50%] justify-evenly items-center">
+          <div className="flex mx-auto w-[40%] justify-evenly items-center">
             {navItems.map((item) => {
               const isActive = pathname === item.href;
               return (
